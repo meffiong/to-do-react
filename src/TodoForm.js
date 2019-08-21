@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import uuid from 'uuid'
+import './NewTodoForm.css'
 
 class TodoForm extends Component {
     constructor(props){
@@ -26,8 +27,8 @@ class TodoForm extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="task">To do</label>
+                <form onSubmit={this.handleSubmit} className="NewTodoForm">
+                    <label htmlFor="task">Enter a new to-do item</label>
                     <input 
                         type="text" 
                         placeholder="New to do" 

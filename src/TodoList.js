@@ -46,7 +46,7 @@ class TodoList extends Component {
 
         return (
             <div className="TodoList">
-                <h1>Todo List!</h1>
+                <h1>Todo List!<span>Make a plan and execute it</span></h1>
                 <ul>
                     <TodoForm createTodo = {this.create} removeTodo={this.remove} />
                     {todos}
