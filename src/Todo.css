@@ -14,16 +14,16 @@
   position: relative;
   transition: opacity 0.4s linear;
 }
-.Todo.completed {
+.Todo .completed {
   transition: opacity 300ms ease-in-out;
   transition-delay: 200ms;
   opacity: 0.5;
 }
 
-.Todo.completed .Todo-task {
+.Todo .completed .Todo-task {
   /* opacity: 0.6; */
 }
-.Todo.completed .Todo-task:before {
+.Todo .completed:before {
   content: "";
   position: absolute;
   top: 50%;

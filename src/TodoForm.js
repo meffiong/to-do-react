@@ -18,7 +18,7 @@ class TodoForm extends Component {
 
     handleSubmit(e){
         e.preventDefault()
-        this.props.createTodo({...this.state, id: uuid() })
+        this.props.createTodo({...this.state, id: uuid(), completed: false }) //Creates new object and adds id and completed properties to it
         this.setState({task: ""})
     }
 
