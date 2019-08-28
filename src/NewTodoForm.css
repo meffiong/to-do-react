@@ -38,3 +38,7 @@
   font-family: "Quicksand", sans-serif;
   height: 3rem;
 }
+
+@media screen and ( max-width: 600px ) and ( min-width: 200px ) {
+  .NewTodoForm button{ margin: 20px auto; }
+}
